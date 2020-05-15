@@ -1,0 +1,70 @@
+Question 1
+
+-----------------------
+Iteration: 1
+-----------------------
+0       0       0
+0       0       0
+-----------------------
+Iteration: 2
+-----------------------
+0       50      0
+0       40      100
+-----------------------
+Iteration: 3
+-----------------------
+40      50      0
+32      80      100
+-----------------------
+Iteration: 4
+-----------------------
+40      64      0
+64      80      100
+-----------------------
+Iteration: 5
+-----------------------
+51.2    64      0
+64      80      100
+
+Therefore, optimal values are:
+- S1 = 51.2
+- S2 = 64
+- S3 = 0
+- S4 = 64
+- S5 = 80
+- S6 = 100
+
+Question 2
+
+Right   Down    Terminal
+Right   Right   Up
+
+Therefore, the optimal behavior is:
+Right, Down, Right, Up
+
+Question 3
+
+Yes, this is possible. If the immediate reward is multiplied by the same constant factor, then the utility of each 
+state will also be multiplied by this constant but the optimal policy will remain the same.
+
+Typically, a change in the reward function can yield a new optimal policy or the same one. This depends on the size 
+of the change and where it occurs.
+
+E.g. 
+If the reward for the transition from (0,1) -> (0,0) was changed to 10, the utility of state (0,1) would change 
+but the optimal policy would remain constant. This can be seen in the final iteration extract below.
+
+-----------------------
+Iteration: 5
+-----------------------
+51.2    64      0
+64      80      100
+
+Conversely, if the reward for transition (1,1) -> (2,1) was changed to 150, both the utility and the optimal policy
+would change as this increase is significant when compared to the other available rewards. This is shown below.
+
+-----------------------
+Iteration: 3
+-----------------------
+120     150     0
+96      120     100
