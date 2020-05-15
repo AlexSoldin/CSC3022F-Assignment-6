@@ -29,14 +29,14 @@ void displayData(vector<vector<State>> toDisplay){
 /* Main Method */
 int main(){
      
-    State s1(0, {{STransition::down,  0}, {STransition::right, 0}});
-    State s2(0, {{STransition::left,  0}, {STransition::down,  0}, {STransition::right, 50}});
-    State s3(0, {});
-    State s4(0, {{STransition::up,    0}, {STransition::right, 0}});
-    State s5(0, {{STransition::left,  0}, {STransition::up,    0}, {STransition::right, 0}});
-    State s6(0, {{STransition::left, 0}, {STransition::up,   100}});
+    State state1(0, {{STransition::down,  0}, {STransition::right, 0}});
+    State state2(0, {{STransition::left,  0}, {STransition::down,  0}, {STransition::right, 50}});
+    State state3(0, {});
+    State state4(0, {{STransition::up,    0}, {STransition::right, 0}});
+    State state5(0, {{STransition::left,  0}, {STransition::up,    0}, {STransition::right, 0}});
+    State state6(0, {{STransition::left, 0}, {STransition::up,   100}});
 
-    vector<vector<State>> states = {{s1, s2, s3}, {s4, s5, s6}};
+    vector<vector<State>> states = {{state1, state2, state3}, {state4, state5, state6}};
 
     bool converged = true;
     int count = 10;
