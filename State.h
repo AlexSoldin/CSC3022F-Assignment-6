@@ -1,10 +1,9 @@
 #ifndef STATE_H
 #define STATE_H
 
-#include <vector>
-#include <ostream>
 #include "Transition.h"
 
+/* Each State holds a utility value and possible Tranistion objects */
 class State {
 public:
     double value;
